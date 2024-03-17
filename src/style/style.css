@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color_pricipal: #000;
+}
+
+/* index */
+body{
+    background: url(../images/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    height: 100%;
+}
+main{
+    background-color: var(--color_pricipal);
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+nav{
+    background-color: #1b3d41;
+}
+#menu{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 50px;
+}
+#menu li{
+    margin: 15px 30px;
+    list-style: none;
+}
+#menu li:hover{
+    transform: scale(1.1);
+    transition: ease 0.2s;
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #5e5e5e;
+    border-radius: 10px;
+    padding: 7px 15px;
+    box-shadow: 0.6px 0.6px 8px #ffffffc2;
+}
+#mensaje{
+    width: 95%;
+    background-color: #5e5e5e;
+    margin: auto;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 1px 1px 12px #ffffffce;
+    display: grid;
+    place-items: center;
+}
+#Texto {
+    padding: 20px;
+    width: 100%;
+}
+#Texto p{
+    margin: 30px 15px;
+    font-size: 18px;
+}
+p{
+    color: #fff;
+}
+#contenedor_cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 20px 0px;
+    gap: 150px;
+}
+
+#contenedor_cabecera figure {
+    border-radius: 15px;
+    width: 200px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#contenedor_cabecera figure img {
+    width: 450px;
+    height: 300px;
+}
+h1{
+    color: #fff;
+}
+#cotenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+#cotenido article{
+    display: grid;
+    place-items: center;
+    width: 60%;
+}
+#cotenido aside{
+    width: 60%;
+    display: grid;
+    place-items: center;
+}
+#cotenido aside figure{
+    overflow: hidden;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    border-radius: 13px;
+}
+#cotenido aside figure img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: #1b3d41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+footer p{
+    padding: 20px;
+}
+/* fin index */
+
+/* inicio familia */
+
+#contenido_familia{
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.persona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+    width: 80%;
+    border-bottom: solid #2293a0 3px; 
+}
+.persona figure{
+    width: 40%;
+}
+.contenido_persona{
+    width: 50%;
+}
+.contenido_persona h2{
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    margin: 30px;
+}
+.contenido_persona p {
+    margin: 20px 0px;
+    padding: 0px 40px;
+    letter-spacing: 2px;
+}
+/* fin familia */
+/* Inicio Hobbies */
+#contenido_hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#contenido_hobbies h2{
+    color: #fff;
+    font-size: 32px;
+    margin: 20px 0px;
+}
+#contenedor_hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 60%;
+    padding: 20px;
+}
+.hobbie{
+    width: 200px;
+    height: 200px;
+    border: solid #2293a0 2px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+.hobbie h3{
+    color:  #fff;
+}
+.hobbie:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+/* fin hobbies */
+
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+th, td {
+    border: 2px solid #2293a0;
+    padding: 8px;
+    text-align: left;
+    color: #fff;
+    text-align: center;
+}
+
+th {
+    background-color: #1b3d41;
+}
+tr{
+    background-color: #1b3d41;
+}
+
+/* tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e2e2e2;
+} */
+
+
+/* formulario */
+
+#contenido_formulario{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    form{
+        background-color: #1b3d41;
+        border-radius: 7px;
+        width: 50%;
+        margin: 40px;
+        padding: 30px 60px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+        h2{
+            color: #fff;
+            text-align: center;
+            margin: 10px 0 30px;
+        }
+        #terminos{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            width: 90%;
+            margin: auto;
+            p{
+                font-size: 18px;
+            }
+            input[type=checkbox]{
+                width: auto;
+                margin: 10px;
+                padding: 5px;
+                height: 20px;
+                border-radius: 5px;
+                transform: scale(1.3);
+                border: none;
+            }
+        }
+        .input_fields{
+            position: relative;
+            display: grid;
+            place-items: center;
+            margin: 10px 0;
+            button{
+                background-color: #2293a0;
+                padding: 10px;
+                border: none;
+                border-radius: 7px;
+                margin: 20px;
+                color: #fff;
+                font-size: 16px;
+            }
+            select{
+                border-radius: 7px;
+                border: 2px solid #ffffff;
+                width: 80%;
+                background-color: transparent;
+                padding: 10px;
+                font-size: 16px;
+                outline: none;
+                padding: 15px ;
+                color: transparent;
+                option{
+                    background-color: #2293a0;
+                }
+            }
+            input{
+                border-radius: 7px;
+                border: 2px solid #ffffff;
+                width: 80%;
+                background-color: transparent;
+                padding: 10px;
+                font-size: 16px;
+                outline: none;
+                padding: 15px ;
+                color: transparent;
+            }
+            #fecha::-webkit-calendar-picker-indicator {
+                filter: invert(100%) hue-rotate(180deg); /* Cambiar el color a blanco */
+                cursor: pointer;
+            }
+            select:focus, select:valid{
+                color: #fff;
+                border: 2px solid #2293a0;
+            }
+            select:focus, 
+            select:valid{
+                color: #fff;
+                border: 2px solid #2293a0;
+            }
+            input:focus, 
+            input:valid{
+                color: #fff;
+                border: 2px solid #2293a0;
+            }
+            select:focus + label,
+            select:valid + label{
+                top: 0;
+                left: 15%;
+                font-size: 18px;
+                padding: 0 5px;
+                background-color: #1b3d41;
+            }
+            input:focus + label,
+            input:valid + label{
+                top: 0;
+                left: 15%;
+                font-size: 18px;
+                padding: 0 5px;
+                background-color: #1b3d41;
+            }
+            label{
+                position: absolute;
+                top: 50%;
+                left: 15%;
+                color: #fff;
+                font-size: 20px;
+                transform: translateY(-50%);
+                pointer-events: none;
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+/* fin  formulario */
